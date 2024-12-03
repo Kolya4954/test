@@ -1,7 +1,71 @@
 :root{
     --accent-color:#ECECEC;
-    --text-color:#000000;
+    --text-color:#000;
     --section-color:#2F303A;
     --button-color:#2196F3;
     --section2-color:#F5F4FA;
+    --added-color:#757575;
+    --addedtext-color:#212121;
+    --white-color:#FFF;
+}
+.span{
+    color: var(--button-color);
+}
+.header-link{
+    color: var(--text-color);
+}
+.footer-link{
+    color: var(--text-color);
+}
+.header-links{
+    color: var(--addedtext-color);
+}
+.header-links2{
+    color: var(--added-color);
+}
+.section1{
+    background-color: var(--section-color);
+}
+.section1-title{
+    color: var(--white-color);
+}
+.section1-button{
+background-color: var(--button-color);
+color: var(--white-color);
+}
+.section2{
+    color: var(--white-color);
+}
+.section2-title{
+    color: var(--addedtext-color);
+}
+.section2-text{
+    color: var(--added-color);
+}
+.section3-title{
+    color: var(--addedtext-color);
+}
+.section4{
+    background-color: var(--section2-color);
+}
+.section4-title{
+    color: var(--addedtext-color);
+}
+.section4-subtitle{
+    color: var(--addedtext-color);
+}
+.section4-text{
+    color: var(--added-color);
+}
+.footer{
+    background-color: var(--section-color);
+}
+.footer-link2{
+    color: var(--white-color);
+}
+.footer-link{
+    color: var(--white-color);
+}
+.list-links{
+    color: var(--added-color);
 }

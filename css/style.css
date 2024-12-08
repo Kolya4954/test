@@ -26,6 +26,7 @@ body {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
+  display: flex;
 }
 .span {
   color: var(--text-color);

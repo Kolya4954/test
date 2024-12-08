@@ -40,20 +40,20 @@ body {
 .header-links:hover {
   color: var(--button-color);
 }
-.header-links2 {
+.header-item {
   color: var(--added-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
-.header-links2:hover {
+.header-item:hover {
   color: var(--button-color);
 }
-.section1 {
+.hero {
   background-color: var(--section-color);
 }
-.section1-title {
+.hero-title {
   color: var(--white-color);
   text-align: center;
   font-size: 44px;
@@ -62,7 +62,7 @@ body {
   letter-spacing: 2.64px;
   text-transform: uppercase;
 }
-.section1-button {
+.hero-button {
   color: var(--white-color);
   text-align: center;
   font-size: 16px;
@@ -73,7 +73,7 @@ body {
   background: var(--button-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.section2-title {
+.advantages-title {
   color: var(--addedtext-color);
   font-size: 14px;
   font-weight: 700;
@@ -81,14 +81,14 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.section2-text {
+.advantages-text {
   color: var(--added-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
 }
-.section3-title {
+.about-title {
   color: var(--addedtext-color);
   text-align: center;
   font-size: 36px;
@@ -96,7 +96,7 @@ body {
   line-height: 1.16;
   letter-spacing: 1.08px;
 }
-.section4-title {
+.team-title {
   color: var(--addedtext-color);
   text-align: center;
   font-size: 36px;
@@ -104,14 +104,14 @@ body {
   line-height: 1.16;
   letter-spacing: 1.08px;
 }
-.section4-subtitle {
+.team-subtitle {
   color: var(--addedtext-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.48px;
 }
-.section4-text {
+.team-text {
   color: var(--added-color);
   text-align: center;
   font-size: 16px;
@@ -122,7 +122,7 @@ body {
 .footer {
   background-color: var(--section-color);
 }
-.footer-link {
+.footer-logo {
   color: var(--button-color);
   font-family: Raleway;
   font-size: 26px;
@@ -133,7 +133,7 @@ body {
 .footer-title {
   color: var(--white-color);
 }
-.footer-link2 {
+.footer-link {
   color: var(--white-color);
   font-size: 14px;
   font-weight: 400;
@@ -141,7 +141,7 @@ body {
   letter-spacing: 0.42px;
   font-style: normal;
 }
-.list-links {
+.list-item {
   color: var(--footer-contacts);
   font-size: 14px;
   font-weight: 400;
@@ -181,21 +181,21 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.section1{
+.hero{
     padding-top:  210px;
 padding-bottom: 290px;
 }
-.section2{
+.advantages{
     padding-top:  95px;
 padding-bottom: 135px;
 }
-.section2-img{
+.advantages-img{
     padding-top: 60px;
 }
-.section3{
+.about{
     padding-bottom: 90px;
 }
-.section4{
+.team{
     padding-top: 100px;
 padding-bottom: 90px;
 }

@@ -8,13 +8,15 @@
   --addedtext-color: #212121;
   --white-color: #fff;
   --footer-contacts: rgba(255, 255, 255, 0.6);
+  --border-color: #eee;
 }
 .container {
-  width: 1200px;
+  width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 3px solid aqua;
 }
 body {
   font-family: Roboto;
@@ -71,11 +73,11 @@ body {
 .hero {
   background-color: var(--section-color);
 }
-.hero-container{
+.hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px; 
+  gap: 30px;
   width: auto;
 }
 .hero-title {
@@ -105,7 +107,7 @@ body {
   padding: 10px 32px 10px 32px;
   border: none;
 }
-.advantages-list{
+.advantages-list {
   display: flex;
   gap: 30px;
 }
@@ -125,7 +127,7 @@ body {
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
 }
-.about-list{
+.about-list {
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -139,12 +141,12 @@ body {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-.team-list{
+.team-list {
   display: flex;
   gap: 30px;
   justify-content: space-between;
 }
-.team-item{
+.team-item {
   background-color: var(--white-color);
 }
 .team-title {
@@ -174,7 +176,7 @@ body {
   letter-spacing: 0.48px;
   margin-top: 10px;
 }
-.team-card{
+.team-card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -200,11 +202,11 @@ body {
   letter-spacing: 0.42px;
   font-style: normal;
 }
-.footer-list{
+.footer-list {
   display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    row-gap: 9px;
+  flex-direction: column;
+  margin-top: 20px;
+  row-gap: 9px;
 }
 .list-item {
   color: var(--footer-contacts);
@@ -216,13 +218,20 @@ body {
 }
 .btn {
   color: var(--addedtext-color);
+  background-color: var(--section2-color);
   text-align: center;
+  font-family: Roboto;
   font-size: 16px;
+  font-style: normal;
   font-weight: 500;
-  line-height: 1.62; /* 162.5% */
+  line-height: 26px; /* 162.5% */
   letter-spacing: 0.48px;
+  width: 125px;
+  height: 38px;
+  flex-shrink: 0;
+  padding: 6px 22px;
+  border: none;
   border-radius: 4px;
-  background: var(--team-beakground);
 }
 .btn:hover {
   color: var(--white-color);
@@ -235,12 +244,30 @@ body {
   line-height: 2; /* 200% */
   letter-spacing: 1.08px;
 }
+.button-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+.gallay-item {
+  border: 1px solid var(--border-color);
+  background-color: var(--white-color);
+}
 .gallay-text {
   color: var(--added-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
+}
+.gallay-card{
+  padding: 20px 24px;
+}
+.gallay-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
 }
 .header {
   padding-top: 24px;
@@ -271,8 +298,8 @@ body {
   padding-bottom: 60px;
 }
 .gallay {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .button-list {
   padding-bottom: 50px;

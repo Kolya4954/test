@@ -26,6 +26,7 @@ body {
 .header-items {
   display: flex;
   gap: 50px;
+  justify-content: end;
 }
 .header-link {
   color: var(--button-color);

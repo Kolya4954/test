@@ -263,11 +263,20 @@ body {
 .gallay-card{
   padding: 20px 24px;
 }
+.gallay-container{
+  width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid lightgreen;
+}
 .gallay-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
   margin-top: 50px;
+  gap: 30px;
 }
 .header {
   padding-top: 24px;

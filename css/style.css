@@ -21,6 +21,9 @@
 body {
   font-family: Roboto;
 }
+img{
+  display: block;
+}
 .header-list {
   display: flex;
   gap: 50px;
@@ -144,7 +147,6 @@ body {
 .team-list {
   display: flex;
   gap: 30px;
-  justify-content: space-between;
 }
 .team-item {
   background-color: var(--white-color);
@@ -252,6 +254,7 @@ body {
 .gallay-item {
   border: 1px solid var(--border-color);
   background-color: var(--white-color);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .gallay-text {
   color: var(--added-color);
@@ -262,6 +265,9 @@ body {
 }
 .gallay-card{
   padding: 20px 24px;
+}
+.gallay-img{
+  width:100%;
 }
 .gallay-container{
   width: 1230px;

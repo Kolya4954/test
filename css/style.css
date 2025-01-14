@@ -16,7 +16,6 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid lightgreen;
 }
 body {
   font-family: Roboto;
@@ -110,6 +109,9 @@ img{
   padding: 10px 32px 10px 32px;
   border: none;
 }
+.hero-button:hover{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
 .advantages-list {
   display: flex;
   gap: 30px;
@@ -122,7 +124,7 @@ img{
     background-color: var(--section2-color);
     border-radius: 4px;
     margin-bottom: 30px;
-    background-image: url(../images/antenna.png);
+    background-image: url(../images/antenna.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
@@ -135,7 +137,7 @@ img{
     background-color: var(--section2-color);
     border-radius: 4px;
     margin-bottom: 30px;
-    background-image: url(../images/clock.png);
+    background-image: url(../images/clock.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
@@ -148,7 +150,7 @@ img{
     background-color: var(--section2-color);
     border-radius: 4px;
     margin-bottom: 30px;
-    background-image: url(../images/diagram.png);
+    background-image: url(../images/diagram.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
@@ -161,7 +163,7 @@ img{
     background-color: var(--section2-color);
     border-radius: 4px;
     margin-bottom: 30px;
-    background-image: url(../images/astronaut.png);
+    background-image: url(../images/astronaut.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
@@ -202,6 +204,7 @@ img{
 }
 .team-item {
   background-color: var(--white-color);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 .team-title {
   color: var(--addedtext-color);
@@ -290,6 +293,7 @@ img{
 .btn:hover {
   color: var(--white-color);
   background-color: var(--button-color);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 .gallay-title {
   color: var(--addedtext-color);
@@ -307,6 +311,9 @@ img{
   border: 1px solid var(--border-color);
   background-color: var(--white-color);
   flex-basis: calc((100% - 60px) / 3);
+}
+.gallay-item:hover{
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 .gallay-text {
   color: var(--added-color);

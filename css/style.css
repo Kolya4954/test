@@ -71,6 +71,11 @@ img{
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
 .header-item:hover {
   color: var(--button-color);
 }

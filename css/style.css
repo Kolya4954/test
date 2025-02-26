@@ -17,6 +17,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    outline: 1px solid blue;
 }
 body {
   font-family: Roboto;
@@ -64,18 +65,23 @@ img{
 .header-links:hover {
   color: var(--button-color);
 }
+.header-icon{
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--added-color);
+}
 .header-item {
   color: var(--added-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.icon-mail {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
+
 .header-item:hover {
   color: var(--button-color);
 }

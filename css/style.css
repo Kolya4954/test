@@ -9,7 +9,8 @@
   --white-color: #fff;
   --footer-contacts: rgba(255, 255, 255, 0.6);
   --border-color: #eee;
-  --bgcolor-hero: rgba(47, 48, 58, 1);;
+  --bgcolor-hero: rgba(47, 48, 58, 1);
+  --card-color:#AFB1B8;
 }
 .container {
   width: 1200px;
@@ -31,11 +32,11 @@ img{
 }
 .navigation{
   margin-left: 93px;
-    margin-right: 344px;
+    margin-right: auto;
 }
 .header-items {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   justify-content: end;
 }
 .header-link {
@@ -65,9 +66,15 @@ img{
 .header-links:hover {
   color: var(--button-color);
 }
-.header-icon{
+.header-iconone{
   width: 16px;
-  height: 12px;
+height: 12px;
+  margin-right: 10px;
+  fill: var(--added-color);
+}
+.header-icontwo{
+  width: 10px;
+height: 16px;
   margin-right: 10px;
   fill: var(--added-color);
 }
@@ -84,6 +91,12 @@ img{
 
 .header-item:hover {
   color: var(--button-color);
+  .header-iconone{
+    fill: var(--button-color);
+  }
+  .header-icontwo{
+    fill: var(--button-color);
+  }
 }
 .hero {
   background: var(--bgcolor-hero);
@@ -216,9 +229,36 @@ img{
   display: flex;
   gap: 30px;
 }
+.card-icon{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--card-color);
+}
+.card-item:hover{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color:var(--button-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card-icon{
+    fill: var(--white-color);
+  }
+}
+.card-list{
+  display: flex;
+    justify-content: center;
+    gap: 34px;
+    margin-top: 28px;
+}
 .team-item {
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+
 }
 .team-title {
   color: var(--addedtext-color);

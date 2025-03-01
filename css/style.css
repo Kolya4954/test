@@ -242,22 +242,24 @@ img {
   justify-content: center;
   fill: var(--card-color);
 }
-.card-item:hover {
+.icon-link{
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  background-color: var(--button-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  .card-icon {
-    fill: var(--white-color);
-  }
+  border-radius: 50%;
+}
+.icon-link:hover{
+    background-color:var(--button-color);
+    .card-icon{
+        fill: var(--white-color);
+    }
 }
 .card-list {
   display: flex;
   justify-content: center;
-  gap: 34px;
+  gap: 10px;
   margin-top: 28px;
   list-style: none;
 }
@@ -378,6 +380,13 @@ img {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
+}
+.footer-container{
+  display: flex;
+  align-items: baseline;
+}
+.footer-join{
+  margin-left: 70px;
 }
 .footer-title {
   color: var(--white-color);

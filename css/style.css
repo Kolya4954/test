@@ -12,7 +12,9 @@
   --bgcolor-hero: rgba(47, 48, 58, 1);
   --card-color: #afb1b8;
   --join-color: rgba(255, 255, 255, 0.1);
+  --position-color:rgba(47, 48, 58, 0.80);;
 }
+/* Main */
 .container {
   width: 1200px;
   margin-left: auto;
@@ -27,6 +29,8 @@ body {
 img {
   display: block;
 }
+
+/* Header */
 .header-list {
   display: flex;
   gap: 50px;
@@ -99,6 +103,7 @@ img {
     fill: var(--button-color);
   }
 }
+/* Hero */
 .hero {
   background: var(--bgcolor-hero);
   content: "";
@@ -144,6 +149,7 @@ img {
 .hero-button:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+/* Advantages */
 .advantages-list {
   display: flex;
   gap: 30px;
@@ -216,6 +222,7 @@ img {
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
 }
+/* About */
 .about-list {
   display: flex;
   gap: 30px;
@@ -230,6 +237,27 @@ img {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
+.about-text{
+  color: var(--white-color);
+text-align: center;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+position: absolute;
+bottom: 0;
+left: 0;
+padding-bottom: 27px;
+padding-top: 27px;
+width: 100%;
+background-color: var(--position-color);
+}
+.position-box{
+  position: relative;
+}
+/* Team */
 .team-list {
   display: flex;
   gap: 30px;
@@ -299,6 +327,7 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+/* Clients */
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -338,6 +367,7 @@ img {
   justify-content: center;
   align-items: center;
 }
+/* Footer */
 .footer {
   background-color: var(--section-color);
 }
@@ -413,11 +443,19 @@ img {
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
 }
+
+/* Gallay */
+.gallay-title {
+  color: var(--addedtext-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2; /* 200% */
+  letter-spacing: 1.08px;
+}
 .btn {
   color: var(--addedtext-color);
   background-color: var(--section2-color);
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -435,13 +473,6 @@ img {
   background-color: var(--button-color);
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-}
-.gallay-title {
-  color: var(--addedtext-color);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2; /* 200% */
-  letter-spacing: 1.08px;
 }
 .button-list {
   display: flex;
@@ -485,6 +516,7 @@ img {
   margin-top: 50px;
   gap: 30px;
 }
+/* Paddings */
 .header {
   padding-top: 24px;
   padding-bottom: 25px;

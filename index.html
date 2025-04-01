@@ -66,7 +66,7 @@
         <div class="container">
           <div class="hero-container">
             <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-            <button type="button" class="hero-button">Замовити посгулу</button>
+            <button type="button" class="hero-button" data-modal-open>Замовити посгулу</button>
           </div>
         </div>
       </section>
@@ -472,5 +472,24 @@
     </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+     <button class="modal-close" type="button" data-modal-close><svg class="crestik">
+      <use href="./images/symbol-defs.svg#icon-crestik">
+
+      </use>
+     </svg></button>
+     <h2 class="modal-title">
+      Залиште свої дані, ми вам передзвонимо
+     </h2>
+     <form class="modal-form">
+      <label class="modal-label">Ім'я
+        <input type="text" class="modal-input">
+      </label>
+     </form>
+    </div>
+    </div>
+    <script src="./js/modal.js" type="module">
+    </script>
   </body>
 </html>

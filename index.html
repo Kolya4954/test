@@ -474,7 +474,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-     <button class="modal-close" type="button" data-modal-close><svg class="crestik">
+     <button class="modal-close" type="button" data-modal-close><svg class="cross">
       <use href="./images/symbol-defs.svg#icon-crestik">
 
       </use>
@@ -484,8 +484,41 @@
      </h2>
      <form class="modal-form">
       <label class="modal-label">Ім'я
-        <input type="text" class="modal-input">
+        <input required type="text" class="modal-input">
+        <svg class="modal-icon">
+          <use href="./images/symbol-defs.svg#icon-person">
+
+          </use>
+        </svg>
       </label>
+      <label class="modal-label">Телефон
+        <input required type="tel" class="modal-input">
+        <svg class="modal-icon">
+          <use href="./images/symbol-defs.svg#icon-phone">
+
+          </use>
+        </svg>
+      </label>
+      <label class="modal-label">Пошта
+        <input required type="email" class="modal-input">
+        <svg class="modal-icon">
+          <use href="./images/symbol-defs.svg#icon-email">
+
+          </use>
+        </svg>
+      </label>
+      <label class="modal-label">Коментар
+        <textarea class="modal-coment" placeholder="Введіть текст">
+        </textarea>
+      </label>
+        <div class="modal-wrap">
+          <input required class="modal-check" type="checkbox">
+          <p class="modal-text">Погоджуюся з розсилкою та приймаю</p>
+          <a class="modal-link" href="#">Умови договору</a>
+        </div>
+        <div class="modal-box">
+          <button class="modal-button" type="submit">Відправити</button>
+        </div>
      </form>
     </div>
     </div>

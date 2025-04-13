@@ -445,7 +445,55 @@ background-color: var(--position-color);
   line-height: 1.71; /* 171.429% */
   letter-spacing: 0.42px;
 }
-
+.footer-input{
+  width: 358px;
+height: 50px;
+border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: rgba(33, 150, 243, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+padding-left: 16px;
+}
+.join-button{
+  color: var(--white-color);
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+letter-spacing: 0.96px;
+border: none;
+width: 200px;
+height: 50px;
+position: relative;
+border-radius: 4px;
+background: #2196F3;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+margin-left:12px;
+padding-top: 10px;
+padding-left: 28px;
+padding-bottom: 10px;
+padding-right: 62px;
+}
+.footer-box{
+position: relative;
+}
+.button-icon{
+  width: 24px;
+height: 24px;
+position: absolute;
+right: 5%;
+top: 25%;
+fill: var(--white-color);
+}
+.footer-label{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+}
 /* Gallay */
 .gallay-title {
   color: var(--addedtext-color);

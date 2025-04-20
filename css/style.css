@@ -588,10 +588,7 @@ letter-spacing: 0.54px;
 position: absolute;
 top: 0;
 right: 0;
-padding-bottom: 63px;
-padding-top: 63px;
-padding-left: 24px;
-padding-left: 24px;
+padding: 63px 24px;
 background-color:rgba(33, 150, 243, 0.90);
 opacity: 0;
 }

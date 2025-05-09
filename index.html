@@ -17,12 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/main.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
+        <div class="header-container" data-aos="fade-down">
           <a href="./index.html" class="header-link"
             >Web<span class="span">Studio</span></a
           >
@@ -64,8 +65,19 @@
       <section class="hero">
         <div class="container">
           <div class="hero-container">
-            <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-            <button type="button" class="hero-button" data-modal-open>Замовити посгулу</button>
+            <h1 class="hero-title" data-aos="zoom-in">
+              ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
+            </h1>
+            <button
+              type="button"
+              class="hero-button"
+              data-modal-open
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="500"
+            >
+              Замовити посгулу
+            </button>
           </div>
         </div>
       </section>
@@ -73,28 +85,28 @@
         <div class="container">
           <div class="advantages-container">
             <ul class="advantages-list">
-              <li class="advantages-item">
+              <li class="advantages-item" data-aos="fade-right">
                 <h2 class="advantages-title">УВАГА ДО ДЕТАЛЕЙ</h2>
                 <p class="advantages-text">
                   Ідейні міркування, і навіть початок повсякденної роботи з
                   формування позиції.
                 </p>
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item" data-aos="fade-right">
                 <h2 class="advantages-title">ПУНКТУАЛЬНІСТЬ</h2>
                 <p class="advantages-text">
                   Завдання організації, особливо рамки і місце навчання кадрів
                   тягне у себе.
                 </p>
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item" data-aos="fade-left">
                 <h2 class="advantages-title">ПЛАНУВАННЯ</h2>
                 <p class="advantages-text">
                   Так само консультація з широким активом значною мірою
                   зумовлює.
                 </p>
               </li>
-              <li class="advantages-item">
+              <li class="advantages-item" data-aos="fade-left">
                 <h2 class="advantages-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
                 <p class="advantages-text">
                   Значимість цих проблем настільки очевидна, що реалізація
@@ -110,38 +122,38 @@
           <div class="about-container">
             <h2 class="about-title">Чим ми займаємося</h2>
             <ul class="about-list">
-              <li>
+              <li data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="position-box">
-                <img
-                  src="./images/coding.webp"
-                  style="width: 370px; height: 294px"
-                  class="about-img"
-                  alt="пишемо код для сайтів"
-                />
-                <p class="about-text">Десктопні додатки</p>
-              </div>
+                  <img
+                    src="./images/coding.webp"
+                    style="width: 370px; height: 294px"
+                    class="about-img"
+                    alt="пишемо код для сайтів"
+                  />
+                  <p class="about-text">Десктопні додатки</p>
+                </div>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="position-box">
-                <img
-                  src="./images/helping.webp"
-                  style="width: 370px; height: 294px"
-                  class="about-img"
-                  alt="розробляємо програми"
-                />
-                <p class="about-text">Мобільні додатки</p>
-              </div>
+                  <img
+                    src="./images/helping.webp"
+                    style="width: 370px; height: 294px"
+                    class="about-img"
+                    alt="розробляємо програми"
+                  />
+                  <p class="about-text">Мобільні додатки</p>
+                </div>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="position-box">
-                <img
-                  src="./images/desing.webp"
-                  style="width: 370px; height: 294px"
-                  class="about-img"
-                  alt="написання коду Js"
-                />
-                <p class="about-text">Дизайнерські рішення</p>
-              </div>
+                  <img
+                    src="./images/desing.webp"
+                    style="width: 370px; height: 294px"
+                    class="about-img"
+                    alt="написання коду Js"
+                  />
+                  <p class="about-text">Дизайнерські рішення</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -152,7 +164,7 @@
           <div class="team-container">
             <h2 class="team-title">Наша Команда</h2>
             <ul class="team-list">
-              <li class="team-item">
+              <li class="team-item" data-aos="fade-right">
                 <img
                   src="./images/igor.webp"
                   style="width: 270px; height: 260px"
@@ -175,7 +187,8 @@
                       </li>
                       <li class="card-item">
                         <a
-                          href="https://x.com/i/flow/login?redirect_after_login=%2Faccount%2Fswitch%3Flogged_out%3D1%26lang%3Den" class="icon-link"
+                          href="https://x.com/i/flow/login?redirect_after_login=%2Faccount%2Fswitch%3Flogged_out%3D1%26lang%3Den"
+                          class="icon-link"
                           ><svg class="card-icon">
                             <use
                               href="./images/symbol-defs.svg#icon-twitter"
@@ -184,7 +197,9 @@
                         </a>
                       </li>
                       <li class="card-item">
-                        <a href="https://www.facebook.com/?locale=uk_UA" class="icon-link"
+                        <a
+                          href="https://www.facebook.com/?locale=uk_UA"
+                          class="icon-link"
                           ><svg class="card-icon">
                             <use
                               href="./images/symbol-defs.svg#icon-facebook"
@@ -205,7 +220,7 @@
                   </div>
                 </div>
               </li>
-              <li class="team-item">
+              <li class="team-item" data-aos="fade-right">
                 <img
                   src="./images/olga.webp"
                   style="width: 270px; height: 260px"
@@ -228,7 +243,8 @@
                       </li>
                       <li class="card-item">
                         <a
-                          href="https://x.com/i/flow/login?redirect_after_login=%2Faccount%2Fswitch%3Flogged_out%3D1%26lang%3Den" class="icon-link"
+                          href="https://x.com/i/flow/login?redirect_after_login=%2Faccount%2Fswitch%3Flogged_out%3D1%26lang%3Den"
+                          class="icon-link"
                           ><svg class="card-icon">
                             <use
                               href="./images/symbol-defs.svg#icon-twitter"
@@ -237,7 +253,9 @@
                         </a>
                       </li>
                       <li class="card-item">
-                        <a href="https://www.facebook.com/?locale=uk_UA" class="icon-link"
+                        <a
+                          href="https://www.facebook.com/?locale=uk_UA"
+                          class="icon-link"
                           ><svg class="card-icon">
                             <use
                               href="./images/symbol-defs.svg#icon-facebook"
@@ -258,7 +276,7 @@
                   </div>
                 </div>
               </li>
-              <li class="team-item">
+              <li class="team-item" data-aos="fade-left">
                 <img
                   src="./images/mykola.webp"
                   style="width: 270px; height: 260px"
@@ -281,7 +299,8 @@
                       </li>
                       <li class="card-item">
                         <a
-                          href="https://x.com/i/flow/login?redirect_after_login=%2Faccount%2Fswitch%3Flogged_out%3D1%26lang%3Den" class="icon-link"
+                          href="https://x.com/i/flow/login?redirect_after_login=%2Faccount%2Fswitch%3Flogged_out%3D1%26lang%3Den"
+                          class="icon-link"
                           ><svg class="card-icon">
                             <use
                               href="./images/symbol-defs.svg#icon-twitter"
@@ -290,7 +309,9 @@
                         </a>
                       </li>
                       <li class="card-item">
-                        <a href="https://www.facebook.com/?locale=uk_UA" class="icon-link"
+                        <a
+                          href="https://www.facebook.com/?locale=uk_UA"
+                          class="icon-link"
                           ><svg class="card-icon">
                             <use
                               href="./images/symbol-defs.svg#icon-facebook"
@@ -311,7 +332,7 @@
                   </div>
                 </div>
               </li>
-              <li class="team-item">
+              <li class="team-item" data-aos="fade-left">
                 <img
                   src="./images/ermakov.webp"
                   style="width: 270px; height: 260px"
@@ -334,7 +355,8 @@
                       </li>
                       <li class="card-item">
                         <a
-                          href="https://x.com/i/flow/login?redirect_after_login=%2Faccount%2Fswitch%3Flogged_out%3D1%26lang%3Den" class="icon-link"
+                          href="https://x.com/i/flow/login?redirect_after_login=%2Faccount%2Fswitch%3Flogged_out%3D1%26lang%3Den"
+                          class="icon-link"
                           ><svg class="card-icon">
                             <use
                               href="./images/symbol-defs.svg#icon-twitter"
@@ -343,7 +365,9 @@
                         </a>
                       </li>
                       <li class="card-item">
-                        <a href="https://www.facebook.com/?locale=uk_UA" class="icon-link"
+                        <a
+                          href="https://www.facebook.com/?locale=uk_UA"
+                          class="icon-link"
                           ><svg class="card-icon">
                             <use
                               href="./images/symbol-defs.svg#icon-facebook"
@@ -372,36 +396,34 @@
         <div class="container">
           <h2 class="clients-title">Постійні клієнти</h2>
           <ul class="clients-list">
-            <li class="clients-item"><svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-yaco">
-
-              </use>
-            </svg></li>
-            <li class="clients-item"><svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-logo">
-
-              </use>
-            </svg></li>
-            <li class="clients-item"><svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-logocom">
-
-              </use>
-            </svg></li>
-            <li class="clients-item"><svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-logofoster">
-
-              </use>
-            </svg></li>
-            <li class="clients-item"><svg class="clients-icon">
-              <use href="./images/symbol-defs.svg#icon-logobrand">
-
-              </use>
-            </svg></li>
-            <li class="clients-item">
+            <li class="clients-item" data-aos="fade-right">
               <svg class="clients-icon">
-                <use href="./images/symbol-defs.svg#icon-logotagline">
-  
-                </use>
+                <use href="./images/symbol-defs.svg#icon-yaco"></use>
+              </svg>
+            </li>
+            <li class="clients-item" data-aos="fade-right">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-logo"></use>
+              </svg>
+            </li>
+            <li class="clients-item" data-aos="fade-right">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-logocom"></use>
+              </svg>
+            </li>
+            <li class="clients-item" data-aos="fade-left">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-logofoster"></use>
+              </svg>
+            </li>
+            <li class="clients-item" data-aos="fade-left">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-logobrand"></use>
+              </svg>
+            </li>
+            <li class="clients-item" data-aos="fade-left">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-logotagline"></use>
               </svg>
             </li>
           </ul>
@@ -410,137 +432,143 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-        <div class="footer-div">
-        <a href="./index.html" class="footer-logo"
-          >Web<span class="footer-title">Studio</span></a
-        >
-        <ul class="footer-list">
-          <li>
-            <a
-              href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5358055,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858!16s%2Fg%2F1tctq5jv?hl=ru&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
-              class="footer-link"
-              >м. Київ, пр-т Лесі Українки, 26</a
+        <div class="footer-container" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+          <div class="footer-div">
+            <a href="./index.html" class="footer-logo"
+              >Web<span class="footer-title">Studio</span></a
             >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="list-item"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="list-item">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
-        <div class="footer-join">
-        <h2 class="join-title">
-          приєднуйтесь
-        </h2>
-        <ul class="join-list">
-           <li class="join-item">
-           <a class="join-link" href="https://www.instagram.com"><svg class="join-icon">
-            <use href="./images/symbol-defs.svg#icon-instagram">
-  
-            </use>
-           </svg></a>
-          </li>
-           <li class="join-item">
-           <a class="join-link" href="https://x.com/?lang=uk"><svg class="join-icon">
-            <use href="./images/symbol-defs.svg#icon-twitter">
-  
-            </use>
-           </svg></a>
-          </li>
-           <li class="join-item">
-           <a class="join-link" href="https://www.facebook.com/?locale=uk_UA"><svg class="join-icon">
-            <use href="./images/symbol-defs.svg#icon-facebook">
-  
-            </use>
-           </svg></a>
-          </li>
-           <li class="join-item">
-           <a class="join-link" href="https://ua.linkedin.com"><svg class="join-icon">
-            <use href="./images/symbol-defs.svg#icon-linkedin">
-  
-            </use>
-           </svg></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-sub">
-         <h2 class="join-title">
-          Підпишіться на розсилку
-         </h2>
-         <form class="footer-form">
-          <div class="footer-box">
-            <label class="footer-label">
-              <input required type="email" class="footer-input" placeholder="E-mail">
-    
-            </label>
-            <button class="join-button" type="submit">Підписатися</button>
-            <svg class="button-icon">
-              <use href="./images/symbol-defs.svg#icon-send">
-    
-              </use>
-             </svg>
-           </div>
-         </form>
-      </div>
-    </div>
+            <ul class="footer-list">
+              <li>
+                <a
+                  href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5358055,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858!16s%2Fg%2F1tctq5jv?hl=ru&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+                  class="footer-link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="list-item"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="list-item"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-join">
+            <h2 class="join-title">приєднуйтесь</h2>
+            <ul class="join-list">
+              <li class="join-item">
+                <a class="join-link" href="https://www.instagram.com"
+                  ><svg class="join-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="join-item">
+                <a class="join-link" href="https://x.com/?lang=uk"
+                  ><svg class="join-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-twitter"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="join-item">
+                <a
+                  class="join-link"
+                  href="https://www.facebook.com/?locale=uk_UA"
+                  ><svg class="join-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="join-item">
+                <a class="join-link" href="https://ua.linkedin.com"
+                  ><svg class="join-icon">
+                    <use
+                      href="./images/symbol-defs.svg#icon-linkedin"
+                    ></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-sub">
+            <h2 class="join-title">Підпишіться на розсилку</h2>
+            <form class="footer-form">
+              <div class="footer-box">
+                <label class="footer-label">
+                  <input
+                    required
+                    type="email"
+                    class="footer-input"
+                    placeholder="E-mail"
+                  />
+                </label>
+                <button class="join-button" type="submit">Підписатися</button>
+                <svg class="button-icon">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-     <button class="modal-close" type="button" data-modal-close><svg class="cross">
-      <use href="./images/symbol-defs.svg#icon-crestik">
-
-      </use>
-     </svg></button>
-     <h2 class="modal-title">
-      Залиште свої дані, ми вам передзвонимо
-     </h2>
-     <form class="modal-form">
-      <label class="modal-label">Ім'я
-        <input required type="text" class="modal-input">
-        <svg class="modal-icon">
-          <use href="./images/symbol-defs.svg#icon-person">
-
-          </use>
-        </svg>
-      </label>
-      <label class="modal-label">Телефон
-        <input required type="tel" class="modal-input">
-        <svg class="modal-icon">
-          <use href="./images/symbol-defs.svg#icon-phone">
-
-          </use>
-        </svg>
-      </label>
-      <label class="modal-label">Пошта
-        <input required type="email" class="modal-input">
-        <svg class="modal-icon">
-          <use href="./images/symbol-defs.svg#icon-email">
-
-          </use>
-        </svg>
-      </label>
-      <label class="modal-label">Коментар
-        <textarea class="modal-coment" placeholder="Введіть текст">
-        </textarea>
-      </label>
-        <div class="modal-wrap">
-          <input required class="modal-check" type="checkbox">
-          <p class="modal-text">Погоджуюся з розсилкою та приймаю</p>
-          <a class="modal-link" href="#">Умови договору</a>
-        </div>
-        <div class="modal-box">
-          <button class="modal-button" type="submit">Відправити</button>
-        </div>
-     </form>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="cross">
+            <use href="./images/symbol-defs.svg#icon-crestik"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <label class="modal-label"
+            >Ім'я
+            <input required type="text" class="modal-input" />
+            <svg class="modal-icon">
+              <use href="./images/symbol-defs.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="modal-label"
+            >Телефон
+            <input required type="tel" class="modal-input" />
+            <svg class="modal-icon">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="modal-label"
+            >Пошта
+            <input required type="email" class="modal-input" />
+            <svg class="modal-icon">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="modal-label"
+            >Коментар
+            <textarea class="modal-coment" placeholder="Введіть текст">
+            </textarea>
+          </label>
+          <div class="modal-wrap">
+            <input required class="modal-check" type="checkbox" />
+            <p class="modal-text">Погоджуюся з розсилкою та приймаю</p>
+            <a class="modal-link" href="#">Умови договору</a>
+          </div>
+          <div class="modal-box">
+            <button class="modal-button" type="submit">Відправити</button>
+          </div>
+        </form>
+      </div>
     </div>
-    </div>
-    <script src="./js/modal.js" type="module">
+    <script src="./js/modal.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

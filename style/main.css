@@ -149,15 +149,13 @@ body {
   background-position: center;
   background-size: cover;
 }
-
-.hero-container {
+.hero__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: auto;
 }
-
-.hero-title {
+.hero__title {
   color: #fff;
   text-align: center;
   font-size: 44px;
@@ -170,8 +168,7 @@ body {
   margin-right: auto;
   margin-bottom: 30px;
 }
-
-.hero-button {
+.hero__button {
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -185,8 +182,7 @@ body {
   padding: 10px 32px 10px 32px;
   border: none;
 }
-
-.hero-button:hover {
+.hero__button:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -194,18 +190,16 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.advantages-list {
+.advantages__list {
   display: flex;
   gap: 30px;
 }
-
-.advantages-item:nth-child(1)::before {
+.advantages__item:nth-child(1)::before {
   content: "";
   display: block;
   width: 270px;
   height: 120px;
-  background-color: var(--section2-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
   background-image: url(../images/antenna.webp);
@@ -213,13 +207,12 @@ body {
   background-position: center;
   background-size: 70px;
 }
-
-.advantages-item:nth-child(2)::before {
+.advantages__item:nth-child(2)::before {
   content: "";
   display: block;
   width: 270px;
   height: 120px;
-  background-color: var(--section2-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
   background-image: url(../images/clock.webp);
@@ -227,13 +220,12 @@ body {
   background-position: center;
   background-size: 70px;
 }
-
-.advantages-item:nth-child(3)::before {
+.advantages__item:nth-child(3)::before {
   content: "";
   display: block;
   width: 270px;
   height: 120px;
-  background-color: var(--section2-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
   background-image: url(../images/diagram.webp);
@@ -241,13 +233,12 @@ body {
   background-position: center;
   background-size: 70px;
 }
-
-.advantages-item:nth-child(4)::before {
+.advantages__item:nth-child(4)::before {
   content: "";
   display: block;
   width: 270px;
   height: 120px;
-  background-color: var(--section2-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
   background-image: url(../images/astronaut.webp);
@@ -255,9 +246,8 @@ body {
   background-position: center;
   background-size: 70px;
 }
-
-.advantages-title {
-  color: var(--addedtext-color);
+.advantages__title {
+  color: addedtext-color;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -265,9 +255,8 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-
-.advantages-text {
-  color: var(--added-color);
+.advantages .advantages__text {
+  color: #757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71; /* 171.429% */
@@ -277,15 +266,8 @@ body {
 .about {
   padding-bottom: 94px;
 }
-
-.about-list {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.about-title {
-  color: var(--addedtext-color);
+.about__title {
+  color: #212121;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -293,9 +275,13 @@ body {
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-
-.about-text {
-  color: var(--white-color);
+.about__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.about__text {
+  color: #fff;
   text-align: center;
   font-size: 14px;
   font-style: normal;
@@ -309,34 +295,64 @@ body {
   padding-bottom: 27px;
   padding-top: 27px;
   width: 100%;
-  background-color: var(--position-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
-
-.position-box {
+.about__box {
   position: relative;
 }
 
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--section2-color);
+  background-color: #f5f4fa;
 }
-
-.team-list {
+.team__title {
+  color: #212121;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.team__list {
   display: flex;
   gap: 30px;
 }
-
-.card-icon {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: var(--card-color);
+.team__item {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
-
-.icon-link {
+.team__card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team__subtitle {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.48px;
+  display: flex;
+  justify-content: center;
+}
+.team__text {
+  color: #757575;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.48px;
+  margin-top: 10px;
+}
+.team__listt {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+  list-style: none;
+}
+.team__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -347,60 +363,19 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icon-link:hover {
-  background-color: var(--button-color);
+.team__link:hover {
+  background-color: #2196f3;
 }
-.icon-link:hover .card-icon {
-  fill: var(--white-color);
+.team__link:hover .card-icon {
+  fill: #fff;
 }
-
-.card-list {
+.team__icon {
+  width: 20px;
+  height: 20px;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin-top: 28px;
-  list-style: none;
-}
-
-.team-item {
-  background-color: var(--white-color);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-}
-
-.team-title {
-  color: var(--addedtext-color);
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 1.08px;
-  margin-bottom: 50px;
-}
-
-.team-subtitle {
-  color: var(--addedtext-color);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.18;
-  letter-spacing: 0.48px;
-  display: flex;
-  justify-content: center;
-}
-
-.team-text {
-  color: var(--added-color);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.18;
-  letter-spacing: 0.48px;
-  margin-top: 10px;
-}
-
-.team-card {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  fill: #afb1b8;
 }
 
 .clients {

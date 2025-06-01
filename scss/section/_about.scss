@@ -1,13 +1,8 @@
 .about {
     padding-bottom: 94px;
-  }
-.about-list {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-  }
-  .about-title {
-    color: var(--addedtext-color);
+
+    &__title {
+    color: $addedtext-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -15,8 +10,13 @@
     letter-spacing: 1.08px;
     margin-bottom: 50px;
   }
-  .about-text {
-    color: var(--white-color);
+      &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  &__text {
+    color: $white-color;
     text-align: center;
     font-size: 14px;
     font-style: normal;
@@ -30,8 +30,9 @@
     padding-bottom: 27px;
     padding-top: 27px;
     width: 100%;
-    background-color: var(--position-color);
+    background-color: $position-color;
   }
-  .position-box {
+  &__box {
     position: relative;
+  }
   }

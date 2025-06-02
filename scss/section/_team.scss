@@ -1,11 +1,9 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: $section2-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $section2-color;
 
-
-    
-      &__title {
+  &__title {
     color: $addedtext-color;
     text-align: center;
     font-size: 36px;
@@ -17,6 +15,7 @@
   &__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
   }
   &__item {
     background-color: $white-color;
@@ -27,7 +26,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-   &__subtitle {
+  &__subtitle {
     color: $addedtext-color;
     font-size: 16px;
     font-weight: 500;
@@ -45,49 +44,49 @@
     letter-spacing: 0.48px;
     margin-top: 10px;
   }
-    &__listt {
+  &__listt {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 28px;
     list-style: none;
   }
-      &__link {
+  &__social {
     width: 44px;
     height: 44px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover {
-    background-color: $button-color;
-    .card-icon {
+    transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
+
+    &:hover {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: $button-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .team__icon {
+        fill: $white-color;
+      }
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $card-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
+
+    &:hover {
+      width: 20px;
+      height: 20px;
       fill: $white-color;
     }
   }
-  }
-      &__icon {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: $card-color;
-  }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

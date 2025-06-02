@@ -1,17 +1,22 @@
 .gallay {
     padding-top: 94px;
     padding-bottom: 94px;
+      &__container {
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid aqua;
   }
-.gallay-title {
-    color: var(--addedtext-color);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2; /* 200% */
-    letter-spacing: 1.08px;
+    &__list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
   }
-  .btn {
-    color: var(--addedtext-color);
-    background-color: var(--section2-color);
+    &__btn {
+    color: $addedtext-color;
+    background-color: $section2-color;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -27,39 +32,48 @@
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .btn:hover {
-    color: var(--white-color);
-    background-color: var(--button-color);
+      &:hover {
+    color: $white-color;
+    background-color: $button-color;
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
       0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
   }
-  .button-list {
+
+  }
+    &__listt {
     display: flex;
-    gap: 8px;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
   }
-  .gallay-item {
-    border: 1px solid var(--border-color);
-    background-color: var(--white-color);
+    &__item {
+    border: 1px solid $border-color;
+    background-color: $white-color;
     flex-basis: calc((100% - 60px) / 3);
-  
-  }
-  .gallay-item:hover {
+     &:hover {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-    .gallay-hover {
+    .gallay__hover {
       opacity: 1;
       transform: translateY(0);
     }
   }
-  .gallay-hover {
+
+  }
+    &__box {
+    position: relative;
+    overflow: hidden;
+  }
+  &__img {
+    width: 100%;
+  }
+    &__hover {
     transform: translateY(100%);
     transition-property: transform, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--white-color);
+    color: $white-color;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -73,35 +87,30 @@
     opacity: 0;
     z-index: 1;
   }
-  .gallay-text {
-    color: var(--added-color);
+    &__card {
+    padding: 20px 24px;
+  }
+  &__title {
+    color: $addedtext-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2; /* 200% */
+    letter-spacing: 1.08px;
+  }
+    &__text {
+    color: $added-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.48px;
   }
-  .gallay-card {
-    padding: 20px 24px;
   }
-  .gallay-img {
-    width: 100%;
-  }
-  .hover-box {
-    position: relative;
-    overflow: hidden;
-  }
-  .gallay-container {
-    width: 1230px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    /* outline: 2px solid lightgreen; */
-  }
-  .gallay-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-    gap: 30px;
-  }
+
+
+  
+
+
+
+
+
+

@@ -1,20 +1,29 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--modal-backdrop);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal {
-    width: 528px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $modal-backdrop;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden .modal {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+      width: 528px;
     height: auto;
     border-radius: 4px;
-    background: var(--white-color);
+    background: $white-color;
     transform: scale(1);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -22,25 +31,12 @@
     padding: 40px;
     transform: scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .is-hidden .modal {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  .is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-  .modal-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .modal-close {
+
+  &__close {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid var(--modal-close);
+    border: 1px solid $modal-close;
     background-color: transparent;
     position: absolute;
     top: 8px;
@@ -48,14 +44,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .modal-close:hover,
-  .modal-close:focus {
-    .cross {
-      fill: var(--button-color);
+    &:hover,
+    &:focus {
+      .modal__cross {
+        fill: $button-color;
+      }
     }
   }
-  .cross {
+  &__cross {
     width: 18px;
     height: 18px;
     display: flex;
@@ -65,8 +61,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .modal-title {
-    color: var(--addedtext-color);
+  &__title {
+    color: $addedtext-color;
     text-align: center;
     font-size: 20px;
     font-style: normal;
@@ -75,8 +71,8 @@
     letter-spacing: 0.6px;
     margin-bottom: 8px;
   }
-  .modal-label {
-    color: var(--added-color);
+  &__label {
+    color: $added-color;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -84,42 +80,7 @@
     letter-spacing: 0.12px;
     position: relative;
   }
-  .modal-input {
-    width: 100%;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    display: block;
-    margin-top: 4px;
-    margin-bottom: 10px;
-    padding-left: 42px;
-    padding-right: 30px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-input:hover,
-  .modal-input:focus {
-    border: none;
-    outline: 1px solid;
-    color: var(--button-color);
-  }
-  .modal-input:hover + .modal-icon,
-  .modal-input:focus + .modal-icon {
-    fill: var(--button-color);
-  }
-  .modal-icon {
-    width: 18px;
-    height: 18px;
-    fill: var(--addedtext-color);
-    position: absolute;
-    top: 32px;
-    left: 12px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-coment {
+  &__coment {
     width: 448px;
     height: 120px;
     border-radius: 4px;
@@ -136,12 +97,52 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      outline: 1px solid;
+      color: $button-color;
+    }
   }
-  .modal-coment:hover {
-    outline: 1px solid;
-    color: var(--button-color);
+  &__input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 42px;
+    padding-right: 30px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border: none;
+      outline: 1px solid;
+      color: $button-color;
+    }
+    &:hover + .modal__icon,
+    &:focus + .modal__icon {
+      fill: $button-color;
+    }
   }
-  .modal-check {
+  &__icon {
+    width: 18px;
+    height: 18px;
+    fill: $addedtext-color;
+    position: absolute;
+    top: 32px;
+    left: 12px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__check {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -154,28 +155,30 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover:checked,
+    &:focus:checked {
+      border-color: $button-color;
+    }
+    &:checked {
+  background-color: $button-color;
+  position: relative;
+}
+&:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
   }
-  .modal-check:hover:checked,
-  .modal-check:focus:checked {
-    border-color: var(--button-color);
-  }
-  .modal-check:checked::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 6px;
-    width: 6px;
-    height: 12px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-  }
-  .modal-check:checked{
-    background-color: var(--button-color);
-    position: relative;
-  }
-  .modal-text {
-    color: var(--added-color);
+  &__text {
+    color: $added-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -184,8 +187,8 @@
     margin-left: 9px;
     margin-right: 4px;
   }
-  .modal-link {
-    color: var(--button-color);
+  &__link {
+    color: $button-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -198,12 +201,17 @@
     text-underline-offset: auto;
     text-underline-position: from-font;
   }
-  .modal-button {
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__button {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 52px;
     padding-left: 52px;
-    color: var(--white-color);
+    color: $white-color;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -211,15 +219,11 @@
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: var(--button-color);
+    background: $button-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     margin-top: 30px;
     cursor: pointer;
   }
-  .modal-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+}
+

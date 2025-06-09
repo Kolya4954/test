@@ -30,8 +30,7 @@
     border: none;
     border-radius: 4px;
     transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
       &:hover {
     color: $white-color;
     background-color: $button-color;
@@ -42,8 +41,7 @@
   }
     &__listt {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flexbox();
     margin-top: 50px;
     gap: 30px;
   }
@@ -71,8 +69,7 @@
     &__hover {
     transform: translateY(100%);
     transition-property: transform, opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
     color: $white-color;
     font-size: 18px;
     font-style: normal;

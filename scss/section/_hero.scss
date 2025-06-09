@@ -14,8 +14,7 @@
   background-size: cover;
   &__container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexbox ($wrap:nowrap);
   width: auto;
 }
 &__title {

@@ -3,9 +3,10 @@
     padding-bottom: 25px;
     // АМПЕРСАНТИ //
   &__container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: row;
+  @include flexbox($wrap:nowrap);
   }
   &__link {
     color: $button-color;
@@ -37,8 +38,7 @@
     line-height: 1.14;
     letter-spacing: 0.28px;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
       &:hover {
     color: $button-color;
   }
@@ -54,8 +54,7 @@
     bottom: -34px;
     opacity: 0;
     transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
   }
     &__links:hover::after {
@@ -73,11 +72,9 @@
     line-height: 1.14;
     letter-spacing: 0.28px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox($wrap:nowrap);
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %transition;
       &:hover {
     color: $button-color;
     .header__iconone {
@@ -94,8 +91,7 @@
     margin-right: 10px;
     fill: $added-color;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
     &__icontwo {
     width: 10px;
@@ -103,8 +99,7 @@
     margin-right: 10px;
     fill: $added-color;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@extend %transition;
   }
   }
 

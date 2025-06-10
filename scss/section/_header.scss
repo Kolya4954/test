@@ -6,7 +6,7 @@
     // display: flex;
     // align-items: center;
     // flex-direction: row;
-  @include flexbox($wrap:nowrap);
+    @include  flexbox($wrap:nowrap);
   }
   &__link {
     color: $button-color;
@@ -39,6 +39,8 @@
     letter-spacing: 0.28px;
     transition-property: color;
     @extend %transition;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
     color: $button-color;
   }
@@ -55,6 +57,8 @@
     opacity: 0;
     transition-property: opacity;
     @extend %transition;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   }
     &__links:hover::after {
@@ -71,10 +75,10 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
-    display: flex;
-    @include flexbox($wrap:nowrap);
     transition-property: color;
-@extend %transition;
+    @extend %transition;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       &:hover {
     color: $button-color;
     .header__iconone {
@@ -92,6 +96,8 @@
     fill: $added-color;
     transition-property: fill;
     @extend %transition;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
     &__icontwo {
     width: 10px;
@@ -99,7 +105,9 @@
     margin-right: 10px;
     fill: $added-color;
     transition-property: fill;
-@extend %transition;
+     @extend %transition;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   }
 

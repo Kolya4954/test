@@ -44,8 +44,7 @@
     top: 8px;
     right: 8px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox($wrap:nowrap);
     &:hover,
     &:focus {
       .modal__cross {
@@ -57,11 +56,9 @@
     width: 18px;
     height: 18px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox($wrap:nowrap);
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
   &__title {
     color: $addedtext-color;
@@ -97,8 +94,7 @@
     letter-spacing: 0.12px;
     margin-bottom: 20px;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
     &:hover {
       outline: 1px solid;
       color: $button-color;
@@ -115,8 +111,7 @@
     padding-left: 42px;
     padding-right: 30px;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
     &:hover,
     &:focus {
       border: none;
@@ -140,8 +135,7 @@
   }
   &__wrap {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox($wrap:nowrap);
   }
   &__check {
     -webkit-appearance: none;
@@ -154,8 +148,7 @@
     background-color: #fff;
     cursor: pointer;
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
     &:hover:checked,
     &:focus:checked {
       border-color: $button-color;
@@ -204,8 +197,7 @@
   }
   &__box {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox($wrap:nowrap);
   }
   &__button {
     padding-top: 10px;

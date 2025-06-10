@@ -5,6 +5,6 @@
 @mixin flexbox($justify:center,$align:center,$wrap:wrap){
     display: flex;
     justify-content: $justify;
-    align-items: $center;
-    flex-wrap: wrap;
+    align-items: $align;
+    flex-wrap: $wrap;
 }

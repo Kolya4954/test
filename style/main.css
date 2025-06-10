@@ -16,6 +16,11 @@ h1, h2, h3, h4, p {
   margin: 0;
 }
 
+.modal__check, .modal__input, .modal__coment, .modal__cross, .gallay__hover, .gallay__btn, .footer__linkk, .clients__icon, .clients__item, .team__icon, .team__social, .header__icontwo, .header__iconone, .header__item, .header__links::after, .header__links {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -35,8 +40,9 @@ body {
 }
 .header__container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .header__link {
   color: #2196f3;
@@ -68,8 +74,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__links:hover {
   color: #2196f3;
@@ -86,8 +90,6 @@ body {
   bottom: -34px;
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__links:hover::after {
   opacity: 1;
@@ -103,12 +105,7 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__item:hover {
   color: #2196f3;
@@ -125,8 +122,6 @@ body {
   margin-right: 10px;
   fill: #757575;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__icontwo {
   width: 10px;
@@ -134,8 +129,6 @@ body {
   margin-right: 10px;
   fill: #757575;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
@@ -150,9 +143,6 @@ body {
   background-size: cover;
 }
 .hero__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: auto;
 }
 .hero__title {
@@ -358,11 +348,11 @@ body {
   height: 44px;
   border-radius: 50%;
   display: flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .team__social:hover {
   width: 44px;
@@ -370,8 +360,10 @@ body {
   border-radius: 50%;
   background-color: #2196f3;
   display: flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .team__social:hover .team__icon {
   fill: #fff;
@@ -381,8 +373,6 @@ body {
   height: 20px;
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(1, 0.45, 0, 1.15);
 }
 .team__icon:hover {
   width: 20px;
@@ -415,11 +405,11 @@ body {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__item:hover {
   border: 1px solid;
@@ -433,8 +423,6 @@ body {
   height: 60px;
   fill: #afb1b8;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -503,11 +491,11 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__linkk:hover {
   background-color: #2196f3;
@@ -606,8 +594,6 @@ body {
   border: none;
   border-radius: 4px;
   transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallay__btn:hover {
   color: #fff;
@@ -616,8 +602,10 @@ body {
 }
 .gallay__listt {
   display: flex;
-  flex-wrap: wrap;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 50px;
   gap: 30px;
 }
@@ -643,8 +631,6 @@ body {
 .gallay__hover {
   transform: translateY(100%);
   transition-property: transform, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #fff;
   font-size: 18px;
   font-style: normal;
@@ -722,8 +708,10 @@ body {
   top: 8px;
   right: 8px;
   display: flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .modal__close:hover .modal__cross, .modal__close:focus .modal__cross {
   fill: #2196f3;
@@ -732,11 +720,11 @@ body {
   width: 18px;
   height: 18px;
   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__title {
   color: #212121;
@@ -772,8 +760,6 @@ body {
   letter-spacing: 0.12px;
   margin-bottom: 20px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__coment:hover {
   outline: 1px solid;
@@ -790,8 +776,6 @@ body {
   padding-left: 42px;
   padding-right: 30px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:hover, .modal__input:focus {
   border: none;
@@ -809,13 +793,13 @@ body {
   top: 32px;
   left: 12px;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__wrap {
   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 .modal__check {
   -webkit-appearance: none;
@@ -828,8 +812,6 @@ body {
   background-color: #fff;
   cursor: pointer;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__check:hover:checked, .modal__check:focus:checked {
   border-color: #2196f3;
@@ -876,8 +858,10 @@ body {
 }
 .modal__box {
   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 .modal__button {
   padding-top: 10px;

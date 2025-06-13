@@ -29,10 +29,12 @@
     flex-wrap: wrap;
   }
   &__item {
+     flex-basis: 100%;
+    border-radius: 0px 0px 4px 4px;
     background-color: $white-color;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-             @media screen and (min-width: 480px){
+       @media screen and (min-width: 480px){
     flex-basis: 450px;
        }
         @media screen and (min-width: 768px){
@@ -71,6 +73,7 @@
     margin-top: 28px;
     list-style: none;
   }
+
   &__social {
     width: 44px;
     height: 44px;

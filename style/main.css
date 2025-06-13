@@ -218,7 +218,7 @@ body {
   height: 100%;
   opacity: 1;
   z-index: 1;
-  background: #fff;
+  background-color: #fff;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
   padding: 48px 0 48px 40px;
 }
@@ -398,10 +398,12 @@ body {
 
 .advantages {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .advantages {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .advantages__list {
@@ -455,6 +457,7 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .advantages__title {
@@ -486,7 +489,6 @@ body {
 }
 
 .about {
-  padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
   display: none;
@@ -565,6 +567,8 @@ body {
   flex-wrap: wrap;
 }
 .team__item {
+  flex-basis: 100%;
+  border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }

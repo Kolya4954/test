@@ -28,7 +28,7 @@
             >Web<span class="header__span">Studio</span></a
           >
           <button class="header__btn" type="button" data-mobile-open><svg class="header__menu">
-          <use href="./img/symbol-defs.svg#icon-lines"></use>
+          <use href="./images/symbol-defs.svg#icon-menu"></use>
         </svg></button>
           <nav class="header__navigation">
             <ul class="header__list">
@@ -61,10 +61,10 @@
               >
             </li>
           </ul>
-          <!-- <div class="mobile is-hidden" data-mobile>
+          <div class="mobile is-hidden" data-mobile>
         <button type="button" class="mobile__close" data-mobile-close>
           <svg class="mobile__icon">
-            <use href="./img/symbol-defs.svg#icon-close"></use>
+            <use href="./images/symbol-defs.svg#icon-mobile_close"></use>
           </svg>
         </button>
         <ul class="mobile__list">
@@ -83,12 +83,12 @@
           <li class="mobile__elem"><a href="#" class="mobile__social">Facebook</a></li>
           <li class="mobile__elem"><a href="#" class="mobile__social">LinkedIn</a></li>
         </ul>
-      </div> -->
+      </div>
         </div>
       </div>
     </header>
     <main>
-      <!-- <section class="hero">
+    <section class="hero">
         <div class="container">
           <div class="hero__container">
             <h1 class="hero__title" data-aos="zoom-in">
@@ -107,7 +107,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+       <section class="advantages">
         <div class="container">
           <div class="advantages__container">
             <ul class="advantages__list">
@@ -150,34 +150,47 @@
             <ul class="about__list">
               <li data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="position__box">
-                  <img
+                  <picture>
+                  <source src="./images/desktop/about-desktop2@1x.webp 1x, ./images/desktop/about-desktop2@2x.webp 2x" media="(min-width: 1200px)" >  
+                  
+                    <img
                     src="./images/coding.webp"
                     style="width: 370px; height: 294px"
                     class="about-img"
                     alt="пишемо код для сайтів"
                   />
+                  </picture>
+                  
                   <p class="about__text">Десктопні додатки</p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="position__box">
-                  <img
+                  <picture>
+                    <source src="./images/desktop/about-desktop1@1x.webp 1x, ./images/desktop/about-desktop1@2x.webp 2x" media="(min-width: 1200px)">
+                    <img
                     src="./images/helping.webp"
                     style="width: 370px; height: 294px"
                     class="about-img"
                     alt="розробляємо програми"
                   />
+                  </picture>
+                  
                   <p class="about__text">Мобільні додатки</p>
                 </div>
               </li>
               <li data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="position__box">
-                  <img
+                  <picture>
+                    <source src="./images/desktop/about-desktop@1x.webp 1x, ./images/desktop/about-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                    <img
                     src="./images/desing.webp"
                     style="width: 370px; height: 294px"
                     class="about-img"
                     alt="написання коду Js"
                   />
+                  </picture>
+                  
                   <p class="about__text">Дизайнерські рішення</p>
                 </div>
               </li>
@@ -191,12 +204,18 @@
             <h2 class="team__title">Наша Команда</h2>
             <ul class="team__list">
               <li class="team__item" data-aos="fade-right">
-                <img
+                <picture>
+                  <source srcset="./images/desktop/igor-desktop@1x.webp 1x, ./images/desktop/igor-desktop@2x.webp 2x" media="(min-width: 1200px)" >  
+                  <source srcset="./images/tablet/igot-tablet@1x.webp 1x, ./images/tablet/igor-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="./images/mobile/igor-mobile@1x.webp 1x, ./images/mobile/igor-mobile@2x.webp 1x" media="(min-width: 480px)">
+                  <img
                   src="./images/igor.webp"
                   style="width: 270px; height: 260px"
-                  class="team-img"
+                  class="team__img"
                   alt="Ігор Дем'яненко"
                 />
+
+                </picture>
                 <div class="team__card">
                   <h2 class="team__subtitle">Ігор Дем'яненко</h2>
                   <p class="team__text">Product Designer</p>
@@ -245,12 +264,18 @@
                 </div>
               </li>
               <li class="team__item" data-aos="fade-right">
-                <img
+                <picture>
+                  <source srcset="./images/desktop/olga-desktop@1x.webp 1x, ./images/desktop/olga-desktop@2x.webp 2x" media="(min-width: 1200px)" >  
+                  <source srcset="./images/tablet/olga-tablet@1x.webp 1x, ./images/tablet/olga-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="./images/mobile/olga-mobile@1x.webp 1x, ./images/mobile/olga-mobile@2x.webp 2x" media="(min-width: 480px)">
+                 <img
                   src="./images/olga.webp"
                   style="width: 270px; height: 260px"
-                  class="team-img"
+                  class="team__img"
                   alt="Ольга Рєпіна"
                 />
+                </picture>
+
                 <div class="team__card">
                   <h2 class="team__subtitle">Ольга Рєпіна</h2>
                   <p class="team__text">Frontend Developer</p>
@@ -299,12 +324,18 @@
                 </div>
               </li>
               <li class="team__item" data-aos="fade-left">
-                <img
+                <picture>
+                  <source srcset="./images/desktop/mykola-desktop@1x.webp 1x, ./images/desktop/mykola-desktop@2x.webp 2x" media="(min-width: 1200px)" >  
+                  <source srcset="./images/tablet/mykola-tablet@1x.webp 1x, ./images/tablet/mykola-tablet@2x.webp 2x" media="(min-width: 768px)">
+                  <source srcset="./images/mobile/mykola-mobile@1x.webp 1x, ./images/mobile/mykola-mobile@2x.webp 2x " media="(min-width: 480px)">
+                                  <img
                   src="./images/mykola.webp"
                   style="width: 270px; height: 260px"
-                  class="team-img"
+                  class="team__img"
                   alt="Микола Тарасов"
                 />
+                </picture>
+
                 <div class="team__card">
                   <h2 class="team__subtitle">Микола Тарасов</h2>
                   <p class="team__text">Marketing</p>
@@ -353,12 +384,18 @@
                 </div>
               </li>
               <li class="team__item" data-aos="fade-left">
-                <img
+                <picture>
+                  <source srcset="./images/desktop/mihailo-desktop@1x.webp 1x, ./images/desktop/mihailo-desktop@2x.webp 2x" media="(min-width: 1200px)" >  
+                  <source srcset="./images/tablet/mihailo-tablet@1x.webp 1x, ./images/tablet/mihailo-tablet@2x.webp 2x," media="(min-width: 768px)">
+                  <source srcset="./images/mobile/mihailo-mobile@1x.webp 1x, ./images/mobile/mihailo-mobile@2x.webp 2x," media="(min-width: 480px)">
+                                  <img
                   src="./images/ermakov.webp"
                   style="width: 270px; height: 260px"
-                  class="team-img"
+                  class="team__img"
                   alt="Михайло Єрмаков"
                 />
+                </picture>
+
                 <div class="team__card">
                   <h2 class="team__subtitle">Михайло Єрмаков</h2>
                   <p class="team__text">UI Designer</p>
@@ -415,128 +452,115 @@
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list">
             <li class="clients__item" data-aos="fade-right">
+              <a href="" class="clients__link">
               <svg class="clients__icon">
                 <use href="./images/symbol-defs.svg#icon-yaco"></use>
               </svg>
+              </a>
             </li>
             <li class="clients__item" data-aos="fade-right">
+              <a href="" class="clients__link">
               <svg class="clients__icon">
                 <use href="./images/symbol-defs.svg#icon-logo"></use>
               </svg>
+              </a>
             </li>
             <li class="clients__item" data-aos="fade-right">
+              <a href="" class="clients__link">
               <svg class="clients__icon">
                 <use href="./images/symbol-defs.svg#icon-logocom"></use>
               </svg>
+              </a>
             </li>
             <li class="clients__item" data-aos="fade-left">
+              <a href="" class="clients__link">
               <svg class="clients__icon">
                 <use href="./images/symbol-defs.svg#icon-logofoster"></use>
               </svg>
+              </a>
             </li>
             <li class="clients__item" data-aos="fade-left">
+              <a href="" class="clients__link">
               <svg class="clients__icon">
                 <use href="./images/symbol-defs.svg#icon-logobrand"></use>
               </svg>
+              </a>
             </li>
             <li class="clients__item" data-aos="fade-left">
+              <a href="" class="clients__link">
               <svg class="clients__icon">
                 <use href="./images/symbol-defs.svg#icon-logotagline"></use>
               </svg>
+              </a>
             </li>
           </ul>
         </div>
-      </section>
-    </main> -->
-    <!-- <footer class="footer">
-      <div class="container">
-        <div class="footer__container" data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
-          <div class="footer__div">
-            <a href="./index.html" class="footer__logo"
-              >Web<span class="footer__title">Studio</span></a
-            >
-            <ul class="footer__list">
-              <li>
-                <a
-                  href="https://www.google.com.ua/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5358055,17z/data=!3m1!4b1!4m6!3m5!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858!16s%2Fg%2F1tctq5jv?hl=ru&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
-                  class="footer__link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li>
-                <a href="mailto:info@devstudio.com" class="footer__items"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+380961111111" class="footer__items"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer__join">
-            <h2 class="footer__titlee">приєднуйтесь</h2>
-            <ul class="footer__listt">
-              <li class="footer__itemm">
-                <a class="footer__linkk" href="https://www.instagram.com"
-                  ><svg class="footer__icon">
-                    <use
-                      href="./images/symbol-defs.svg#icon-instagram"
-                    ></use></svg
-                ></a>
-              </li>
-              <li class="footer__itemm">
-                <a class="footer__linkk" href="https://x.com/?lang=uk"
-                  ><svg class="footer__icon">
-                    <use
-                      href="./images/symbol-defs.svg#icon-twitter"
-                    ></use></svg
-                ></a>
-              </li>
-              <li class="footer__itemm">
-                <a
-                  class="footer__linkk"
-                  href="https://www.facebook.com/?locale=uk_UA"
-                  ><svg class="footer__icon">
-                    <use
-                      href="./images/symbol-defs.svg#icon-facebook"
-                    ></use></svg
-                ></a>
-              </li>
-              <li class="footer__itemm">
-                <a class="footer__linkk" href="https://ua.linkedin.com"
-                  ><svg class="footer__icon">
-                    <use
-                      href="./images/symbol-defs.svg#icon-linkedin"
-                    ></use></svg
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__sub">
-            <h2 class="footer__titlee">Підпишіться на розсилку</h2>
-            <form class="footer__form">
-              <div class="footer__box">
-                <label class="footer__label">
-                  <input
-                    required
-                    type="email"
-                    class="footer__input"
-                    placeholder="E-mail"
-                  />
-                </label>
-                <button class="footer__button" type="submit">Підписатися</button>
-                <svg class="footer__iconn">
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </div>
-            </form>
-          </div>
-        </div>
+      </section> 
+    </main>
+    <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <a href="./index.html" class="footer__logo"><span class="footer__color">Web</span>Studio</a>
+        <address class="footer__address">
+          <a href="https://www.google.com/maps?sca_esv=b5919fffce7396f9&sca_upv=1&rlz=1C1CHZN_ruUA982UA982&output=search&q=%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26&source=lnms&fbs=AEQNm0COVew0Xq0UkewHF0CzaajTrA8keGVFEdXM2j2WJ0AIjUNztm_Kw9cV1JjMuT6xZl5LuS1OmgEMRmGB0qL-2Emksq9o55MQCMIy5sP_zevaL5x0zm1OL5p9_9bbFbdGHDV4rK66PGCPl4tVlT5yNy2r32qOexDqkpDbyL2f_WvH-dJraSug3gR5cuxBVdftyfC10RBUJ1f0kMX2j64KMM3nZpJheMuQKO5_2y7LmwBuxtEqglXpYTN2KYHGqU0Orl9qCWRp&entry=mc&ved=1t:200715&ictx=111"
+            target="_blank" class="footer__position">м. Київ, пр-т Лесі Українки, 26</a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
+            </li>
+            <li class="footer__item">
+              <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
       </div>
-    </footer> -->
+      <div class="footer__box">
+        <h2 class="footer__title">приєднуйтесь</h2>
+        <ul class="footer__items">
+          <li class="footer__itm">
+            <a href="" class="footer__social">
+              <svg class="footer__icon">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__itm">
+            <a href="" class="footer__social">
+              <svg class="footer__icon">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__itm">
+            <a href="" class="footer__social">
+              <svg class="footer__icon">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__itm">
+            <a href="" class="footer__social">
+              <svg class="footer__icon">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <b class="footer__subscribe">Підпишіться на розсилку</b>
+        <form class="footer__form">
+          <input type="email" placeholder="E-mail" class="footer__input" />
+          <button type="submit" class="footer__btn">
+            Підписатися
+            <svg class="footer__plane">
+              <use href="./images/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close" type="button" data-modal-close>

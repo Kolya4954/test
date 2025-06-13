@@ -1,76 +1,81 @@
 .advantages {
+  padding-top: 60px;
+   @media screen and (min-width: 1200px){
     padding-top: 94px;
-    padding-bottom: 94px;
+  }
     &__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
   }
-    &__item:nth-child(1)::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: $section2-color;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-image: url(../images/antenna.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px;
+   &__item {
+    
+
+    &::before {
+      content: "";
+      margin-bottom: 30px;
+      display: block;
+      width: 100%;
+      height: 120px;
+      border-radius: 4px;
+      background-color: $section2-color;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      @media screen and (min-width: 480px){
+        width: 450px;
+      }
+   @media screen and (min-width: 768px){
+    width: 354px;
+ }
+ @media screen and (min-width: 1200px){
+  width: 270px;
   }
-        &__item:nth-child(2)::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: $section2-color;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-image: url(../images/clock.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px;
-  }
-    &__item:nth-child(3)::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: $section2-color;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-image: url(../images/diagram.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px;
-  }
-    &__item:nth-child(4)::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: $section2-color;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-image: url(../images/astronaut.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 70px;
+    }
+
+    &:first-child::before {
+      background-image: url(../images/antenna.webp);
+    }
+
+    &:nth-child(2)::before {
+      background-image: url(../images/clock.webp);
+    }
+
+    &:nth-child(3)::before {
+      background-image: url(../images/diagram.webp);
+    }
+
+    &:last-child::before {
+      background-image: url(../images/astronaut.webp);
+    }
   }
     &__title {
-    color: addedtext-color;
+    color: $addedtext-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
+        @media screen and (min-width: 768px){
+      text-align: start;
+ }
   }
-    .advantages__text {
+    &__text {
     color: $added-color;
     font-size: 14px;
+    width: 100%;
     font-weight: 400;
     line-height: 1.71; /* 171.429% */
     letter-spacing: 0.42px;
+        @media screen and (min-width: 480px){
+width: 450px;
+ }
+   @media screen and (min-width: 768px){
+width: 354px;
+ }
+ @media screen and (min-width: 1200px){
+width: 270px;
+  }
   }
   }

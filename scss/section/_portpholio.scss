@@ -1,18 +1,22 @@
-.gallay {
+.card {
     padding-top: 94px;
     padding-bottom: 94px;
-      &__container {
-    width: 1230px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: 2px solid aqua;
-  }
+
     &__list {
     display: flex;
-    gap: 8px;
+  gap: 8px;
+  justify-content: start;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  row-gap: 15px;
+   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   }
     &__btn {
     color: $addedtext-color;
@@ -40,24 +44,37 @@
 
   }
     &__listt {
-    @include flexbox();
-    margin-top: 50px;
-    gap: 30px;
+    display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   }
-    &__item {
+    &__itemm {
     border: 1px solid $border-color;
     background-color: $white-color;
-    flex-basis: calc((100% - 60px) / 3);
-     &:hover {
+    flex-basis: 100%;
+      @media screen and (min-width: 480px){
+  flex-basis: 450px;
+  }
+
+    @media screen and (min-width: 768px){
+  flex-basis: calc((100% - 30px) / 2);
+  }
+
+    @media screen and (min-width: 1200px){
+  flex-basis: calc((100% - 60px) / 3);
+  }
+       &:hover {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-    .gallay__hover {
+    .card__desk {
       opacity: 1;
       transform: translateY(0);
     }
   }
 
-  }
+}
+
+
     &__box {
     position: relative;
     overflow: hidden;
@@ -65,7 +82,7 @@
   &__img {
     width: 100%;
   }
-    &__hover {
+    &__desk {
     transform: translateY(100%);
     transition-property: transform, opacity;
     @extend %transition;
@@ -79,11 +96,13 @@
     top: 0;
     right: 0;
     padding: 67px 25px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
     z-index: 1;
   }
-    &__card {
+    &__wrap {
     padding: 20px 24px;
   }
   &__title {

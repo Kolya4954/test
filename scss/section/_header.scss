@@ -43,8 +43,7 @@
     color: $text-color;
   }
   &__btn {
-    // background-color: transparent;
-    // background-color: red;
+    background-color: transparent;
     border: none;
     display: flex;
     justify-content: center;
@@ -188,12 +187,12 @@
 
     &:hover, 
     &:focus {
-      .mobile-icon {
+      .mobile__svg {
         fill: $button-color;
       }
     }
   }
-  &__icon {
+  &__svg {
     width: 30px;
     height: 30px;
   }

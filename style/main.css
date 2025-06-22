@@ -1045,7 +1045,6 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 50px;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
   z-index: 1;

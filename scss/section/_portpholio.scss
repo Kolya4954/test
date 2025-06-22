@@ -67,7 +67,7 @@
     &__itemm {
     border: 1px solid $border-color;
     background-color: $white-color;
-    flex-basis: 100%;
+    width: 100%;
       @media screen and (min-width: 480px){
   flex-basis: 450px;
   }
@@ -97,6 +97,7 @@
   }
   &__img {
     width: 100%;
+    height: 294px;
   }
     &__desk {
     transform: translateY(100%);
@@ -112,8 +113,6 @@
     top: 0;
     right: 0;
     padding: 50px;
-    width: 100%;
-    height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
     z-index: 1;
